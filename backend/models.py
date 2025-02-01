@@ -52,7 +52,6 @@ class UserOut(BaseModel):
 # Función para hashear contraseñas
 def hash_password(password: str):
     return pwd_context.hash(password)
-
 # Función para verificar contraseñas
 def verify_password(plain_password: str, hashed_password: str):
     return pwd_context.verify(plain_password, hashed_password)
