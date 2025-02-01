@@ -1,8 +1,15 @@
-backend/__pycache__/
-backend/venv/
-backend/*.pyc
+# Ignorar archivos y carpetas no necesarios
+*.pyc
+__pycache__
+.git
+.idea
+venv/
+# Ignorar Dockerfile si contiene información sensible
+Dockerfile
 
+# Ignorar archivos de configuración de Kubernetes
+*.yaml
+*.yml
 
-
-
-*.env
+# También podrías agregar otros archivos que contienen datos sensibles
+.env
