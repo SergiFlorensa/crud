@@ -2,9 +2,10 @@ from databases import Database
 from sqlalchemy import create_engine, MetaData
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
+import os
 
 # URL de conexión a la base de datos PostgreSQL
-DATABASE_URL = "postgresql://postgres@localhost/crud"
+DATABASE_URL = os.getenv("DATABASE_URL")  # Asegúrate de que la variable de entorno esté configurada
 
 # Conexión a la base de datos con la librería 'databases'
 database = Database(DATABASE_URL)

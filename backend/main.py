@@ -21,7 +21,7 @@ SECRET_KEY = "92d40dae5f8046ee8f0cc74e3235ff677999e08585f79baaaedd3ce46f5816ab"
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 30
 
-# Configuración de OAuth2PasswordBearer
+# Configuración de OAuth2PasswordBearerA
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 
 # Función para obtener la sesión de la base de datos
